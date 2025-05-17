@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sidahmed | Portfolio</title>
+        <link rel="stylesheet" href="Projet.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    </head>
+    
+<body>
+
+  <!-- ======= HERO SECTION ======= -->
+  <header class="hero-section" id="home">
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero-content">
+      <h1 class="fade-in">Hello</h1>
+      <h2 class="fade-in-delay">I Am <span class="typing">Developer</span></h2>
+      <div class="social-icons fade-in-delay-2">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-figma"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= ABOUT SECTION ======= -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="sidahmed.png" alt="Sidahmed" />
+    </div>
+    <div class="about-text">
+      <h2>About Me.</h2>
+      <h4>UI/UX Designer & Web Developer</h4>
+      <p>I am Sidahmed, a passionate designer and developer. I design with simplicity and develop with precision to create meaningful digital experiences.</p>
+      <div class="skills">
+        <label>Web Design <span>95%</span></label>
+        <div class="bar"><div class="fill fill-web"></div></div>
+        <label>Branding <span>80%</span></label>
+        <div class="bar"><div class="fill fill-branding"></div></div>
+        <label>Development <span>90%</span></label>
+        <div class="bar"><div class="fill fill-dev"></div></div>
+      </div>
+      <div class="buttons">
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SERVICES SECTION ======= -->
+  <section class="services-section" id="services">
+    <h2>Services.</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <i class="fas fa-laptop"></i>
+        <h3>Web Design</h3>
+        <p>Lorem ipsum is simply dummy text of the lorem ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Branding</h3>
+        <p>Lorem ipsum is simply dummy text of the lorem ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-umbrella"></i>
+        <h3>Development</h3>
+        <p>Lorem ipsum is simply dummy text of the lorem ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+      <div class="service-box">
+        <i class="far fa-gem"></i>
+        <h3>Creative Design</h3>
+        <p>Lorem ipsum is simply dummy text of the lorem ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-desktop"></i>
+        <h3>Fully Responsive</h3>
+        <p>Lorem ipsum is simply dummy text of the lorem ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-camera"></i>
+        <h3>MultiMedia</h3>
+        <p>Lorem ipsum is simply dummy text of the lorem ipsum has been the industry's standard dummy text ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section class="contact" id="contact">
+  <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+
+  <div class="contact-container">
+    <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> sidahmed_example@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +213 6 12 34 56 78</p>
+      <p><i class="fas fa-map-marker-alt"></i> Bab Ezzouar, Alger, Algérie</p>
+    </div>
+  </div>
+</section>
+
+  <script src="Projet.js"></script>
+
+</body>
+</html>

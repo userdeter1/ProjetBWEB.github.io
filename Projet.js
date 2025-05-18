@@ -4,6 +4,26 @@ document.querySelector('.buttons button').addEventListener('click', function(){
 });
 let skillsAnimated = false;
 
+  const button = document.getElementById("thankButton");
+  const modal = document.getElementById("thankModal");
+  const closeBtn = document.querySelector(".close-button");
+
+  button.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+
+
+
 window.addEventListener('scroll', () => {
   const skillsSection = document.querySelector('.skills');
   const rect = skillsSection.getBoundingClientRect();
